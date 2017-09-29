@@ -18,14 +18,12 @@ owner:
 ```
 paper1:
    author: 
-   - Gregor von Laszewski
-   - Fugang Wang
+   - Tousif Ahmed
    hid:
-   - 000
-   - 001
-   title: This is my paper about xyz
-   abstract: This paper showcases this and that and the other
-   url: https://github.com/bigdata-i523/sample-hid000/paper1/paper1.pdf
+   - 237
+   title: Big Data Analytics in Cyber Security and Threat Research
+   abstract:
+   url: https://github.com/bigdata-i523/hid237/paper1/report.pdf
    type: latex
    
    status: in progress
@@ -36,10 +34,10 @@ paper1:
 ```
 paper2:
    author: 
-   - Gregor von Laszewski
+   - Tousif Ahmed
    hid:
-   - 000
-   title: This is my paper about the other abc
+   - 237
+   title: 
    abstract: This paper showcases tis and that and the other in regards to abc
    url: https://github.com/bigdata-i523/sample-hid000/paper2/paper2.pdf   
    type: word
