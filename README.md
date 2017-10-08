@@ -22,10 +22,10 @@ paper1:
    hid:
    - 237
    title: Big Data Analytics in Cyber Security and Threat Research
-   abstract:
+   abstract:The introduction of big data poses new security threats for the organizations and the consequences can cause catastrophic damages for organizations. Newer threats are sophisticated enough that the existing security mechanisms might be ineffective to thwart the attacks. However, big data analytics and tools can help the organizations to detect the threats and take protective measures. Moreover, big data analytics and machine learning together can detect newer threats which was not possible before. In this paper, we discuss some new cybersecurity threats and challenges that has been bolstered by big data and then we discuss some new big data related security mechanisms which can help the organizations to protect their resources. 
    url: https://github.com/bigdata-i523/hid237/paper1/report.pdf
    type: latex
-   status: in progress
+   status: Finished
    chapter: Security
 ```
    
