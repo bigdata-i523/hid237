@@ -15,4 +15,6 @@
 * 09/01/17-09/19/17 Could not give time due to paper deadlines
 
 # Catch Up
-* 09/21/17- 09/28/17 Catched up with the last few weeks of classes. 
+* 09/21/17- 09/28/17 Catched up with the last few weeks of classes.
+* 
+# 
