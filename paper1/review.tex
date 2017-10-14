@@ -1,0 +1,101 @@
+\documentclass[sigconf]{acmart}
+
+\input{format/i523}
+
+\begin{document}
+
+
+\title{Big Data Analytics in Cyber Security and Threat Research}
+
+
+\author{Tousif Ahmed}
+\orcid{HID237}
+\affiliation{
+\institution{Indiana University}
+  \streetaddress{}
+  \city{Bloomington} 
+  \state{IN} 
+  \postcode{}
+}
+\email{touahmed@indiana.edu}
+
+
+% The default list of authors is too long for headers}
+\renewcommand{\shortauthors}{B. Trovato et al.}
+
+
+\begin{abstract}
+The introduction of big data poses new security threats for the organizations and the consequences can cause catastrophic damages for organizations. Newer threats are sophisticated enough that the existing security mechanisms might be ineffective to thwart the attacks. However, big data analytics and tools can help the organizations to detect the threats and take protective measures. Moreover, big data analytics and machine learning together can detect newer threats which was not possible before. In this paper, we discuss some new cybersecurity threats and challenges that has been bolstered by big data and then we discuss some new big data related security mechanisms which can help the organizations to protect their resources. 
+\end{abstract}
+
+\TODO{paper did not use our format,}
+\keywords{i523, HID 237, Big Data, Cyber Securty, Threat Intelligence.}
+
+
+\maketitle
+
+\section{Introduction}
+
+With the rapid growth of consumer based services, artificial intelligence, and social medias, the number security and privacy threats are also increasing. Emerging cyberattacks are not only a threat for industries, end-users are at more risk than ever. A recent stat published by MalwareBytes suggests that there are a rapid proliferation of number of security threats recently and more than 1 billion malwares were detected in their collected data of six month time span~\cite{malware}. The consequence of the cyberattacks can be catastrophic to the Organization and the security of the consumers. Therefore, proper defensive mechanism and security controls need to be placed to impede cyber threats. However, newer threats have become so sophisticated that now it's extremely difficult detect and mitigate newer threats. Existing security mechanisms are ineffective due to the large volume of traffic on the internet and lack of resources.  
+
+
+To accommodate and protect from new line cyber attacks, industries now rely on big data analytics. These new big data analytics shows promises for these new sophisticated cyberattacks and a new area of research has established which studies newer threats and explore defensive mechanisms. Advanced analytics and a combination of machine learning can improve the cyber security and provide a new defensive mechanisms. For example, with the large number of traffic on websites big data analytics enables the security administrators to detect intruders effectively and prevent them from compromising the system. Moreover, the big data analytics can also provide newer lines of defense against consumer's security threat. For example, financial industries can analyze the user's financial behavior and detect anomalies which may help users to mitigate the consequence of stolen credit card or identity theft. The introduction big data analytics poses interesting conundrum for security and privacy, on one hand it creates new security and privacy risks and on the other hand big data analytics provides newer tools for mitigating security threats. 
+
+In this paper, we first discuss the cyber security and privacy threats of big data analytics on organizations and consumers, then we discuss some potential applications that can be used to mitigate cyber security risks.
+
+\section{Cyber Security Threats and Challenges}
+In this section, we briefly discuss various security threats that is posed by the introduction of big data analytics:
+
+\subsection{Increased potential for security breaches}
+Now, organizations are collecting more data which increased the motivation of the attackers to exploit the organization's vulnerabilities and breach their security. The main objective of the attackers are accessing and downloading consumer's data and that data can be sold to other companies or those information can be used to infiltrate more sensitive data~\cite{Fhom15}. For example, if the user's email and birth date can be revealed from one system, that data can be used to infer other sensitive information like banking information. The availability of the data motivates the attacker to attack a system and gain access. Recent series of security breaches on high profile companies like Yahoo~\cite{yahoo} and Equifax~\cite{equifax} provides examples of increased potential, and the number of affected users provides an example of the consequences.
+
+\subsection{Threats to consumers privacy}
+With more data and available tools, consumer's privacy is at more risk than ever. Users share bits of their personal information on various websites and the combined information from various websites poses new security and privacy threats to the consumers. Consumer's privacy threat is a big risk for an organization as the security of the user's data is correlated with the reputation of the organization. Therefore, thwarting the security attacks have become an important issue for the organizations.
+
+\subsection{Sophisticated vulnerabilities}
+With sophisticated big data tools, attackers are now implementing more intelligent spams, malware, and website threats~\cite{Mahmood:2013}.By using machine learning tools, newer generation of spams have been proliferated which is now hard to detect. The rise of chatbots and automated text generating tools have enabled creating spams extremely easy. Moreover, social medias have made spam distribution extremely easy. Besides spams and malwares, increasing number of device usages (smartphone, IoT devices) have increased the number of BotNets. Using analytics tools, now botnet distribution and management has become pretty easy~\cite{Gahi:2016,SINGH:2014}. The emergence of deep learning has also motivated newer types of security threats. 
+
+\subsection{Complex security management and monitoring}
+With high volume of data, now security management is extremely complex. It is very difficult to correctly assess the risks of a system and monitor the networks. With millions of users accessing websites, now it is almost impossible to scrutinize the network traffics. The high volume of data creates additional security risks for organizations. Existing signature based intrusion detection has become irrelevant with higher number of traffics and unpredictable nature of the users. 
+
+
+\section{Big Data Analytics for Cyber Defence and Threat Research}
+In response to newer security threats, big data analytics have been used to provide newer set of tools to the security administrators. Based on the existing researches and news, in this section we discuss some newer techniques for cyber defence:
+
+\subsection{Scalable Anomaly detection}
+The most widely used big data tools for cyber defense is the anomaly detection. Now, with the help of numerous data it has become extremely easy to detect anomalies. Anomaly or abnormal behaviour detection is pretty easy to detect with large volume of data, as most user's exhibits common behavior or patterns. Illegal or bad actors act differently while accessing a system and using clusters it has become very easy to detect anomalies. Nowadays, anomaly detection systems have been incorporated to detect scammers, credit card theives, hackers, and potential intruders. Network monitoring schemes have become extremely scalable and efficient, so that it can easily raise an alert once an abnormal behavior exhibits~\cite{Razar:2016,Rettig}. 
+
+\subsection{Effective Malware Analysis}
+The existing ways to detect malwares are highly inefficient as it highly relies on the previously seen malwares and signatures. Once a software behaves in an inappropriate way (e.g., accessing files that the software does not supposed to, creating multiple copies, logging keys), then the antiviruses generates an alert and then the software is matched with the virus database. With the new attack mechanisms, the malware analysis and reverse engineering of the softwares are highly time consuming and inefficient. Moreover, they do not always help to prevent a security breach. With the help of big data analytics tool, now it's become extremely easy to analyze high volume of software behaviors, network traffics, file-system modification. Therefore, big data analytics shows promises of a more intelligent antiviruses with more effective malware analysis~\cite{malware2}. 
+
+\subsection{Fake user detection and prevention at scale}
+With the growing number of services, one problem that the organizations regularly face is that the number of fake users. Often fake users create profiles in various platforms and websites. These fake users often create problems on the platforms ecology and exhibits abusive behaviors towards legitimate users. Identifying fake users often extremely difficult with the large number of legitimate users. Now, big data analytics provides various tools to analyze networks effectively which allowed the platforms to detect fake users by analyzing their behaviors. Often these fake user's creates a large networks and by clustering algorithms it has become pretty easy to isolate the group of fake users. 
+
+\subsection{Spam fighting and detect Botnets at scale}
+Spam and Botnet are one of the major security problem for organizations. They cost useful resources and the underground economy of spam suggests that spam accounts have high benifits~\cite{Stone-Gross:2011}. Everyday hundreds of users falls into phishing attack which cost the users moentary loss. The proliferation of social medias and crowd sourced systems have increased the spam distribution. However, now organizations are extremely effective on detecting spams and botnets. Various data anayltics are helping organizations  to prevent spammers and protect naive users~\cite{SINGH:2014}. 
+
+\subsection{Automated security management}
+As mentioned earlier, security management has become extremely complex with higher volumes of traffic and data. However, big data management tools provide better security management and new data analytics and visualization tools provide automated approach of security management. Now, it's not necessary to manually investigate the behaviors and generate rules. Using the tools and machine learning, now it is possible to predict threats and automate the security and risk management. 
+
+\subsection{Better surveillance and cyber safety}
+Since 9/11, we have seen an increasing usage of communication technology by terrorists or malicious users. However, with the variety of platforms it is has become hard to identify these malicious actors. Big data analytics tools provide a better tool for government surveillance. Although such massive surveillance compromises public privacy, still such surveillance has become effective to thwart dangerous national attacks and so far more than 50 terror plots have been thwarted~\cite{nsa}. Such massive surveillance have become possible due to the big data tools and analytics. They have been successful detecting anomalous behaviors and identifying the bad actors. Similar to the terrorists, these new tools are helpful for detecting social menaces like pedophiles online and keep people safe online. 
+
+\section{Conclusion}
+Although big data tools and analytics has created cyber threats, it is also helping defending the threats and shown promises on successful defending in the future. According to recent stats, security breaches are declining with the help of big data analytics~\cite{big}.  However, with the apparent benefits still companies have not widely adopted big data tools for security, only one in five companies are using big data security at this moment~\cite{big2}. The main reason for not adopting big data analytics is the high cost and lack of human resources. However, it is expected that the cost will be reduced and more people will be interested on big data related tools which may influence widespread use of big data analytics. With the increasing usage and better tools, threats will be more sophisticated and defensive mechanisms need to be advanced on parallel. 
+
+
+
+
+
+
+
+
+\begin{acks}
+
+  The authors would like to thank Professor Gregor von Laszewski for helping us with the instruction and resources that was required to complete this paper. We would also to like to thank the associate instructors for being available on the course website all the time and helping us with their answers.
+\end{acks}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{report} 
+
+\input{bibtex-error}\input{issues}\end{document}
