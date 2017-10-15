@@ -4,7 +4,8 @@ owner:
     name: Ahmed, Tousif
     url: https://github.com/bigdata-i523/hid237
 paper1:
-    abstract: 'The introduction of big data poses new security threats for the organizations
+    abstract: >
+        The introduction of big data poses new security threats for the organizations
         and the consequences can cause catastrophic damages for organizations. Newer
         threats are sophisticated enough that the existing security mechanisms might
         be ineffective to thwart the attacks. However, big data analytics and tools
@@ -14,8 +15,6 @@ paper1:
         cybersecurity threats and challenges that has been bolstered by big data and
         then we discuss some new big data related security mechanisms which can help
         the organizations to protect their resources.
-
-        '
     author:
         - Tousif Ahmed
     chapter: Security
