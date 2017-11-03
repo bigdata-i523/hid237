@@ -34,3 +34,20 @@ paper2:
     title: Benchmarking a BigData Docker deployment
     type: latex
     url: https://github.com/bigdata-i523/sample-pid000/project/report.pdf
+    
+project:
+   type: project   
+   author:
+   - Tousif Ahmed
+   hid:
+   - 237
+   title: >
+      Analyzing everyday challenges of people with visual impairments
+   abstract: >
+       People with visual impairments can live their lives more independent with the help of various camera-assisted 
+       technologies. They capture photos and asks their question on camera based applications. The services automatically
+       analyzes their questions and photos to help them various challenges in their daily lives. This report analyzes their
+       questions and taken photos to understand their everyday challenges.  
+   application: HealthCare
+   keywords: HID-237, ENGR 534
+   status: in progress
