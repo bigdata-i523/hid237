@@ -6,49 +6,25 @@
 \title{Big Data Analytics for Social Media Threat Intelligence}
 
 
-\author{Ben Trovato}
-\orcid{1234-5678-9012}
+\author{Tousif Ahmed}
+\orcid{HID237}
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \streetaddress{P.O. Box 1212}
-  \city{Dublin} 
-  \state{Ohio} 
-  \postcode{43017-6221}
-}
-\email{trovato@corporation.com}
-
-\author{G.K.M. Tobin}
-\affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \streetaddress{P.O. Box 1212}
-  \city{Dublin} 
-  \state{Ohio} 
-  \postcode{43017-6221}
-}
-\email{webmaster@marysville-ohio.com}
-
-\author{Gregor von Laszewski}
-\affiliation{%
-  \institution{Indiana University}
-  \streetaddress{Smith Research Center}
+\institution{Indiana University}
+  \streetaddress{150 S Woodlawn Avenue}
   \city{Bloomington} 
-  \state{IN} 
-  \postcode{47408}
-  \country{USA}}
-\email{laszewski@gmail.com}
+  \state{Indiana} 
+  \postcode{47405}
+}
+\email{touahmed@indiana.edu}
 
-
-% The default list of authors is too long for headers}
-\renewcommand{\shortauthors}{G. v. Laszewski}
 
 
 \begin{abstract}
-This paper provides a sample of a \LaTeX\ document which conforms,
-somewhat loosely, to the formatting guidelines for
-ACM SIG Proceedings.
+Social media has become a virtual society for everyone where billions of people are  interacting  everyday. With the humonguous number of users, it has become extremely difficult to manage and track the users behavior in social media.  Malicious actors leverage this weakness of social media platforms and target regular users with threats that includes cyberbullying, malware distribution, spam distribution, fake news, and propaganda.  The consequence of such threats can  affect large number of people, and can result in catastrophic damage. However, identifying the malicious users from the huge number of regular users remain the most challenging problem for the social media platforms. Big data analytics can be one of the most powerful tool  for the social media platforms to prevent the such attacks on social media platforms. This paper discusses the threats of social medias and the ways to use big data analytics to prevent such attacks on social media platforms. 
+
 \end{abstract}
 
-\keywords{Big Data, Edge Computing i523}
+\keywords{E534, HID 237,  Big Data, Social Media, Threat Intelligence, Privacy}
 
 
 \maketitle
@@ -56,66 +32,39 @@ ACM SIG Proceedings.
 
 
 \section{Introduction}
+More than two billion people use various social media platforms every day~\cite{social-media}. In every minute, approximately one million people logs in to facebook, 50,000 photos are uploaded on Instagram, half million tweets are posted on Twitter, two million snaps are created, and one million profile matches happen on Tinder (Figure ~\ref{f:socialmedia}) ~\cite{social-media2}. Social media platforms has become a virtual society for everyone where people are interacting with a large number of audience everyday. Similar to the regular society, there are bad actors in the virtual society who are trying to harm people. Due to the extended outreach, social media platforms has become an ideal platform for the malicious actors to harm that includes cyberbullying ~\cite{Slonje:2013,Kwan:2013,Singh:2017,Cheng:2017,HosseinmardiMRH15} and the distribution of offensive, misleading, false or malicious information ~\cite{Menczer:2016, socialbots-CACM, Shao15hoaxy, Shao17hoaxybots}. Terrorist and government can also leverage social media to spread propaganda~\cite{Aro2016,Weimann:2006}.
 
-Put here an introduction about your topic. 
-We just need one sample refernce so the paper compiles in LaTeX so we
-put it here \cite{editor00}.
-
-\section{figures}
-
-In Figure \ref{f:fly} we show a fly. Please note that because we use
-just columwidth that the size of the figure will change to the
-columnwidth of the paper once we change the layout to final. CHnaging
-the layout to final should not be done by you. All figures will be
-listed at the end.
 
 \begin{figure}[!ht]
-  \centering\includegraphics[width=\columnwidth]{images/fly.pdf}
-  \caption{Example caption}\label{f:fly}
+  \centering\includegraphics[width=0.5\columnwidth]{images/one-internet-minute.png}
+  \caption{What happens in an internet minute?~\cite{social-media2}}\label{f:socialmedia}
 \end{figure}
 
-When copying the example, please do not check in the images from the
-examples into your images directory as you will not need them for your
-paper. Instead use images that you like to include. If you do not have
-any images, do not dreate the images folder.
+Since the beginning of society, malicious actors are common phenomena and society has taken necessary steps to control them. Law enforcement organizations have been helping the society to control social menaces and protect the individuals from internal and external threats.  Real society constituted by small groups, therefore, it is easier to control  them. In contrast to the actual society, it is far more difficult to manage the virtual society due to it's volume. It is nearly impossible to construct virtual law enforcement organizations in the virtual world and protect the individuals from malicious actors. Therefore, protecting the social media platforms from threats remain one of the most challenging problems. The recent advancement of machine learning and big data shows promises and offer new set of weapons to fight. Big data analytics provides easier way to scale, manage, and visualize user's data which can be valuable for fighting malicious actors. The volume of data gives the researchers tremendous insight which can be a new way to help regular users. This paper discusses the impact of big data on three different social media threats.
 
-\section{Tables}
+\section{Social Media Threat Intelligence}
+This section discuss the impact of big data on social media threat intelligences. Each threats were discussed first then the use of big data on detecting and preventing the threats were discussed:
 
-In case you need to create tables, you can do this with online tools
-(if you do not mind sharing your data) such as
-\url{https://www.tablesgenerator.com/} or other such tools (please
-google for them). They even allow you to manage tables as CSV.
+\subsection{Cyberbullying detection and identification}
+Cyberbullying can be defined as the usage of computing devices to hurt or embarass another person.  Cyberbullying in social media constitutes posting negative or offensive comments in posts, post videos or photos to make fun of others,  stalking, harassing, and trolling.  Approximately, 43 percent teenagers in the U.S have been victims of cyberbullying in 2013 and most of them were bullied in social media~\cite{cyberbullying}. Cyberbullying has bad impact on people, which include deep emotional trauma, mental disorder, substance abuse, and suicidal tendency~\cite{cb-effect}. 
 
-or generate them by hand while using the provided template in Table\ref{t:mytable}. Not ethat
-the caption is before the tabular environment.
+The rise of social media has caused significant growth in cyberbullying. The rise of photos and social media have aggravated the situation. However, text analysis or social media post analysis has become impressively smart to detect cyberbullying~\cite{HosseinmardiMRH1}. Natural language processing algorithms llike LDA can easiliy detect social media posts with negative menaings and keyword matching can be helpful to detect and identify the offensive keywords. Recent results shows promising advancement in detecting cyberbullying and in future it would be far easier to control. Another potential approach to detect and identify cyberbullying is analyzing photos or videos.
 
-\begin{table}[htb]
-\centering
-\caption{My caption}
-\label{t:mytabble}
-\begin{tabular}{lll}
-1 & 2 & 3 \\
-\hline
-4 & 5 & 6 \\
-7 & 8 & 9
-\end{tabular}
-\end{table}
+\subsection{Internal Abuse detection}
+Although social media abuse falls in the category of cyberbullying, abuse can be different than cyberbullying. Social media abuse can be defined as misusing user's personal information that do not necessarily harm the user but can break the level of mutual trusts between the abuser and the abused. For example, stealing one's content from their social media profile do not harm the user but breaks the mutual trust in the relationship. In social media, people connect with others by putting a level of trust on others. Sometimes, bad actors can use the information to impersonate the person on social media. Later, the impersonated account can be used to embarass or demean the victim. This might not be necessary causing mental harm to the victim but misusing the trust. Such bad actors are pretty common in social media. Since the bad actor's are using genuine information, it is very difficult to detect them.
 
-\section{Long example}
+One approach to detect the abusers is to monitor the user's activity. Most of the cases, such actors exhibits some common behavior such as sending friend requests to random people, infrequent usage, random or anomalous behavior and such other behaviors. However, it is not possible for people to monitor the activity of the users to detect the abusers. However, common patterns can be helpful to detect such anomalies and data mining algorithms like k-means can be used to detect such anomalies. Big data analytics can also be helpful to blacklist the social media abusers and additional manual research can be useful to detect the abusers and ban them. 
 
-If you like to see a more elaborate example, please look at
-report-long.tex. 
 
-\section{Conclusion}
+\subsection{Preventing misinformation}
+\subsection{Preventing Terrorism}
 
-Put here an conclusion. Conlcusions and abstracts must not have any
-citations in the section.
+
 
 
 \begin{acks}
 
-  The authors would like to thank Dr. Gregor von Laszewski for his
-  support and suggestions to write this paper.
+The authors would like to thank Professor Gregor von Laszewski for helping us with the instruction and resources that was required to complete this paper. We would also to like to thank the associate instructors for being available on the course website all the time and helping us with their answers.
 
 \end{acks}
 
