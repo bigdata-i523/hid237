@@ -5,16 +5,17 @@ owner:
     url: https://github.com/bigdata-i523/hid237
 paper1:
     abstract: >
-        The introduction of big data poses new security threats for the organizations
-        and the consequences can cause catastrophic damages for organizations. Newer
-        threats are sophisticated enough that the existing security mechanisms might
-        be ineffective to thwart the attacks. However, big data analytics and tools
-        can help the organizations to detect the threats and take protective measures.
-        Moreover, big data analytics and machine learning together can detect newer
-        threats which was not possible before. In this paper, we discuss some new
-        cybersecurity threats and challenges that has been bolstered by big data and
-        then we discuss some new big data related security mechanisms which can help
-        the organizations to protect their resources.
+        The introduction of big data poses new security threats for the
+        organizations and the consequences can cause catastrophic damages
+        for organizations. Newer threats are sophisticated
+        enough that the existing security mechanisms might be ineffective
+        to thwart the attacks. However, big data analytics and tools can help
+        the organizations to detect the threats and take protective measures.
+        Moreover, big data analytics and machine learning together can detect
+        newer threats which was not possible before. In this paper, we discuss
+        some new cybersecurity threats and challenges that has been bolstered
+        by big data and then we discuss some new big data related security
+        mechanisms which can help the organizations to protect their resources.
     author:
         - Tousif Ahmed
     chapter: Security
@@ -27,8 +28,22 @@ paper1:
 paper2:
     review: Nov 6 2017
     abstract: >
-     Social media has become a virtual society for everyone where billions of people are  interacting everyday. With the    humonguous number of users, it has become extremely difficult to manage and track the users behavior in social media.  Malicious actors leverage this weakness of social media platforms and target regular users with threats that includes cyberbullying, malware distribution, spam distribution, fake news, and propaganda.  The consequence of such threats can  affect large number of people, and can result in catastrophic damage. However, identifying the malicious users from the huge number of regular users remain the most challenging problem for the social media platforms.Big data analytics can be one of the most powerful tool  for the social media platforms to prevent such attacks on social media platforms. This paper discusses the threats of social medias and the ways to use big data analytics to prevent such attacks on social media platforms.
-   author:
+     Social media has become a virtual society for everyone where billions of
+     people are  interacting everyday. With the    humonguous number of users,
+     it has become extremely difficult manage and track the users behavior in
+     social media.  Malicious actors leverage this weakness of social media
+     platforms and target regular users with threats that includes
+     cyberbullying, malware distribution, spam distribution, fake news,
+     and propaganda.The consequence of such threats can  affect large number
+     of people,and can result in catastrophic damage. However, identifying
+     the malicious users from the huge number of regular users remain the
+     most challenging problem for the social media platforms.Big data analytics
+     can be one of the most powerful tool  for the social media platforms
+     to prevent such attacks on social media platforms.
+     This paper discusses the threats of social medias and
+     the ways to use big data analytics to prevent such
+     attacks on social media platforms.
+    author:
         - Tousif Ahmed
     hid:
         - 237
@@ -36,17 +51,21 @@ paper2:
     title: Big Data Analytics in Social Media Threat Research
     type: latex
     url: https://github.com/bigdata-i523/hid237/paper2/report.tex
-    
 project:
-   type: project   
-   author:
-   - Tousif Ahmed
-   hid:
-   - 237
-   title: >
-      Analyzing everyday challenges of people with visual impairments
-   abstract: >
-       People with visual impairments can live their lives more independent with the help of various camera-assisted technologies. They capture photos and asks their question on camera based applications. The services automaticallyanalyzes their questions and photos to help them various challenges in their daily lives. This report analyzes their questions and taken photos to understand their everyday challenges.  
-   application: HealthCare
-   keywords: HID-237, ENGR 534
-   status: in progress
+    type: project
+    author:
+        - Tousif Ahmed
+    hid:
+        - 237
+    title: Analyzing everyday challenges of people with visual impairments
+    abstract: >
+       People with visual impairments can live their lives more independent
+       with the help of various camera-assisted technologies. They capture
+       photos and asks their question on camera based applications.
+       The services automaticallyanalyzes their questions and photos
+       to help them various challenges in their daily lives.
+       This report analyzes their questions and taken photos
+       to understand their everyday challenges.
+    application: HealthCare
+    keywords: HID-237, ENGR 534
+    status: in progress
