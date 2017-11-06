@@ -26,12 +26,13 @@ paper1:
     url: https://github.com/bigdata-i523/hid237/paper1/report.pdf
 paper2:
     review: Nov 6 2017
-    abstract: This paper showcases tis and that and the other
+    abstract: 
+      Social media has become a virtual society for everyone where bil-lions of people are interacting everyday. With the humongous num-ber of users, it has become extremely dicult to manage and trackthe users behavior in social media. Malicious actors leverage thisweakness of social media platforms and target regular users withthreats that includes cyberbullying, malware distribution, spamdistribution, fake news, and propaganda. e consequence of suchthreats can aect large number of people, and can result in cata-strophic damage. However, identifying the malicious users from thehuge number of regular users remain the most challenging problemfor the social media platforms. Big data analytics can be one of themost powerful tool for the social media platforms to prevent thesuch aacks on social media platforms. is paper discusses thethreats of social medias and the ways to use big data analytics toprevent such aacks on social media platforms
     author:
         - Tousif Ahmed
     hid:
         - 237
-    status: 0%, In Progress
+    status: 70%, In Progress
     title: Big Data Analytics in Social Media Threat Research
     type: latex
     url: https://github.com/bigdata-i523/hid237/paper2/report.pdf
