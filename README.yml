@@ -26,9 +26,18 @@ paper1:
     url: https://github.com/bigdata-i523/hid237/paper1/report.pdf
 paper2:
     review: Nov 6 2017
-    abstract: 
-      Social media has become a virtual society for everyone where bil-lions of people are interacting everyday. With the humongous num-ber of users, it has become extremely dicult to manage and trackthe users behavior in social media. Malicious actors leverage thisweakness of social media platforms and target regular users withthreats that includes cyberbullying, malware distribution, spamdistribution, fake news, and propaganda. e consequence of suchthreats can aect large number of people, and can result in cata-strophic damage. However, identifying the malicious users from thehuge number of regular users remain the most challenging problemfor the social media platforms. Big data analytics can be one of themost powerful tool for the social media platforms to prevent thesuch aacks on social media platforms. is paper discusses thethreats of social medias and the ways to use big data analytics toprevent such aacks on social media platforms
-    author:
+    abstract: >
+     Social media has become a virtual society for everyone where billions of people are  interacting 
+      everyday. With the humonguous number of users, it has become extremely difficult to manage and 
+      track the users behavior in social media.  Malicious actors leverage this weakness of social media
+       platforms and target regular users with threats that includes cyberbullying, malware distribution, 
+       spam distribution, fake news, and propaganda.  The consequence of such threats can  affect large number 
+       of people, and can result in catastrophic damage. However, identifying the malicious users from the huge 
+       number of regular users remain the most challenging problem for the social media platforms.
+        Big data analytics can be one of the most powerful tool  for the social media platforms to prevent 
+        such attacks on social media platforms. This paper discusses the threats of social medias and the ways 
+        to use big data analytics to prevent such attacks on social media platforms.
+   author:
         - Tousif Ahmed
     hid:
         - 237
