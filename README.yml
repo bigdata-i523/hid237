@@ -47,7 +47,7 @@ paper2:
         - Tousif Ahmed
     hid:
         - 237
-    status: 99%, In Progress
+    status: 100%, Nov 6, 2017
     title: Big Data Analytics in Social Media Threat Research
     type: latex
     url: https://github.com/bigdata-i523/hid237/paper2/report.tex
@@ -68,4 +68,4 @@ project:
        to understand their everyday challenges.
     application: HealthCare
     keywords: HID-237, ENGR 534
-    status: in progress
+    status: 10%, Dec 4, 2017
