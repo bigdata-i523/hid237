@@ -1,6 +1,10 @@
 \documentclass[sigconf]{acmart}
 
 \input{format/final}
+\graphicspath{ {./images/}}
+\usepackage{subcaption}
+\usepackage[table]{xcolor}
+\usepackage{url}
 
 \begin{document}
 \title{Analyzing everyday challenges of people with visual impairments}
@@ -31,9 +35,33 @@
 
 
 \section{Introduction}
-People with visual impairments face a variety of problems in their daily lives and need assistance. They need assistance with detecting objects, identifying money, navigation, transportation, household activities, cooking, and various other activities. Sighted person on rely on vision on so many things that it is almost impossible to visualize and understand the problems of people with visual impairments. Although there are variety of tools available to simulate the challenges and experiences of people with visual impairments, it is very  
+People with visual impairments face a variety of problems in their daily lives and need assistance. They need assistance with detecting objects, identifying money, navigation, transportation, household activities, cooking, and various other activities. Sighted person on rely on vision on so many things that it is almost impossible to visualize and understand the problems of people with visual impairments. Although there are variety of tools available to simulate the challenges and experiences of people with visual impairments, the challenges of people with visual impairments is not well understood. To help visually impaired people with technologies, we need to understand their problem first.
 
+One possible to understand the challenges of people with visual impairments is qualitative analysis or ethnographic studies with people with visual impairments. Simply, researchers can follow or conduct interviews with people with visual impairments. Although qualitative studies are widely accepted research methods, it has limitations. Specially to understand the problems of people with visual impairments, qualitative studies have severe limitations. As the challenges vary with the experiences of people with visual impairments, these studies can not capture or depict the whole picture. Besides, these studies are very expensive and need ample human effort. Therefore, we need a better way to understand the challenges of people with visual impairments.
 
+Big data analytics could be a potential alternative. To understand how big data can help people with visual impairments, we need to understand the backgroungd first. Nowadays, people with visual impairments uses different technologies for their problems.A wide range of technologies such as talking watch\footnote{https://www.maxiaids.com/talking-watches}, braille reader\footnote{\url{http://www.afb.org/prodBrowseCatResults.aspx?CatID=43}}, navigation helper \footnote{\url{http://www.gdp-research.com.au/}} are available in the market to help the visually impaired in their daily tasks. Since the introduction of smartphone, smartphone based applications gained huge popularities among people with visual impairments. Now, mobile and smartphone applications like Seeing AI~\cite{seeingai}, AiPoly~\cite{aipoly},LookTel~\cite{looktel}, and other such camera based applications are helping people with visual impairmentsin object recognition, face recognition, color detection, human emotion detection, activity recognition, and other such tasks that was not possible before. Figure ~\ref{fig:seeingai} depicts an example from Seeing AI which shows that how camera based applications are helping people with visual impairments by describing nearby person's activitty (Figure ~\ref{fig:ios}) and their facial emotions (Figure ~\ref{fig:facial}) .
+\begin{figure}[tbph]
+        \centering
+        \begin{subfigure}[b]{0.4\columnwidth}
+                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+                \includegraphics[width=\textwidth]{project/images/facial.pdf}  
+                \caption{Age, gender, appearance, and facial expression} 
+                  \label{fig:facial}   
+        \end{subfigure}%
+        ~ 
+        \begin{subfigure}[b]{0.4\columnwidth}
+                \includegraphics[width=\textwidth]{project/images/activity2.pdf}  
+                 \caption{Age, gender, and activity of a nearby person}
+                  \label{fig:ios}      
+        \end{subfigure}%
+        \caption{Seeing AI providing various information about people nearby~\cite{seeingai}.} 
+        %Android currently displays the requested permissions during the app installation process. iOS  allows selective disabling of permissions for installed apps.}
+        \label{fig:seeingai}
+\end{figure}
+
+Most of the camera assisted assitive applications works in one simple way.The user uploads an intended photo and asks a question about that. Applications have it's simple iq engine which tries to answer the problem first. If it's not able to answer that question, it shares the questions and images with the user's friends and family. Sometimes, the image is shared with a web based human worker. This crowd wroker is essential for such system, because the iq engine is not sophisticated yet. We can not completely trust the automated approaches.  Besides, visually impaired user's can not efficiently take photos. Sometimes they point at totally wrong objetcts or items, sometimes they share blurry photos, and even sometimes the question does not match with the photos~\cite{Jayant:2011,Bigham:2010,Harada:2013}. Therefore, to give a correct answer of the questions, technologies require human intelligence. Questions and answer based applications like TapTapSee~\cite{taptapsee} and VizWiz~\cite{Bigham:2010} uses this approach. LookTell~\cite{looktel} and BeMyEyes does not have any automated approach, it directly broadcasts the video feed to the volunteers and volunteers answer their questions. Some applications are trying to move towards the fully automated approach, however, due to the limitations of automated approaches they did not gain much popularity yet.
+
+The challenges of people with visual impairments can be easily understood from the images uploaded and questions asked by the user. Although it is extremely difficult for people with visual impairments to take a good photo, still they are using these tools because of their challenges. Therefore, the data uploaded in these applications are probably a good way to understand the challenges. However, due to the volume of the data it is not possible to manually identify the problems. Therefore, big data analytics can be helpful in this context to understand the challenges of people with visual impairments. Previously some researchers 
 
 
 
@@ -52,7 +80,7 @@ The authors would like to thank Professor Gregor von Laszewski for helping us wi
 
 %We include an appendix with common issues that we see when students submit papers. One particular important issue is not to use the underscore in bibtex labels. Sharelatex allows this, but the proceedings script we have does not allow this.
 
-W%hen you submit the paper you need to address each of the items in the
+%When you submit the paper you need to address each of the items in the
 %issues.tex file and verify that you have done them. Please do this
 %only at the end once you have finished writing the paper. To d this
 %cange TODO with DONE. However if you check something on with DONE, but
