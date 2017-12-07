@@ -73,7 +73,68 @@ In this section, we discuss the methodology for identifying the challenges of pe
 \subsection{Data Set}
 We used VizWiz data set which is the only available data set in this category. VizWiz is an iPhone application that allows visually impaired users to get quick responses of their challenges. The app tries to find an answer by using automatic IQ engine and anonymous crowd workers~\cite{vizwiz}. VizWiz was released in May, 2011. 
 
-VizWiz application helped more than ten thousand users by answering more than 100,000 questions. However, they only shared half of their data from those participants who gave consent. There 
+VizWiz application helped more than ten thousand users by answering more than 100,000 questions. However, they only shared half of their data from those participants who gave consent. Therefore, around 50,000 data are available for the researchers. However, the researchers removed around 6,000 data due to sensitive contents in the images. The rest of the 43,543 images were made public. All images and questions redundantly checked and anonymized. We downloaded this data set for research purposes in May. Recently, the data is not available to download.Therefore, we urge the instructors to not distribute the data. 
+
+Based on the images shared and questions uploaded, we found only 33,580 images and their related questions. The questions were shared in json format and images are shared in a compressed directory. The questions data set have three columns which I described next:
+\begin{itemize}
+    \item \textbf{image}: The name of the image file. 
+    \item \textbf{private}: If the image is marked as private.
+    \item \textbf{question}: Asked questions of the user. Some questions are missing. 
+    \item \textbf{response}: Each question can have multiple responses. As mentioned earlier, some questions were tried to answer using the IQ engine and some questions were sent to the web workers. For each question, there can be one to 11 responses. However, on average three responses were received. The distribution of the responses shown in Figure~\ref{f:response count}. From  the figure, we can see that most of the questions either received three or four responses.
+    \begin{figure}[!ht]
+ \centering\includegraphics[width=\columnwidth]{images/r_count.png}
+  \caption{Distribution of the number of responses}
+  \label{f:response count}
+\end{figure}
+
+\end{itemize}
+
+\subsection{Data Cleaning and Preparation}
+Since this data was collected from a research group, the data is very clean. We did not need any further cleaning except we discarded the private column. Since the researchers did not share the private images, therefore, all the rows in private columns shows false. Therefore, this column does not add any values to our analysis. We also noticed that lot of questions are missing, but an image is available. We can safely assume that these images were asked without questions and the users assumed that the images are self describing. Since the images can be interesting, therefore, we still kept the questions and labeled those questions as `NoQues'.We used `pandas' for storing the data. We also uploaded the images in the specified Google Drive folder.
+
+\subsection{Data Analysis}
+We performed analysis on both the questions and image data sets. The image data set only used to detect the blurred images. However, we rigorously analyzed the questions to identify various issues of people with visual impairments. In this section, we mainly discussed the text analysis methods. The full analysis can be found in 'question\_analysis' jupyter notebook. The image analysis can be found in 'image\_analysis' notebook. 
+
+\subsubsection{Question Analysis}
+To understand the challenges of people with visual impairments we performed unigram, bigram, and trigram analysis. Based on the analysis, we identified several issues which is presented in the results. The process of identifying the challenges is discussed in next section.
+
+
+
+\section{Results}
+In this section,we present our results that we identified from the analysis:
+\subsection{Identifying the challenges of people with visual impairments}
+The questions asked by people with visual impairments explains some of their challenges in their daily lives. Whenever they are facing issues, they are asking questions in VizWiz. Therefore, the questions asked could give us some insights about their challenges.
+\begin{figure}[hbp]
+        \centering
+        
+        %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+        \includegraphics[width=\columnwidth]{images/uni_all.png}  
+        \caption{Most frequently used words in the questions asked} 
+          \label{fig:uni_all}   
+      
+        
+\end{figure}
+To understand the challenges, we first calculated the frequency of the words. There are around 4500 unique words in the questions. The most frequent 50 words is shown in Figure~\ref{fig:uni_all}.  If we closely examine the words, we can see that the most frequently used word is \emph{`what'}. \emph{`What'} appeared 22793 times which is approximately 70\% of all of the worlds. The second and third most frequent words are `this' and `the'. Since, this is a set of questions, therefore, all the above words are justifiable.  Although, 1what' is somewhat giving us an indication that users are asking about objects or subjective questions mostly, 'this and 'the' is not adding that much value.  Next, we performed the same analysis by removing the most commonly used words in English. That unigrams gave us some additional insights. The list of most freuquntly used interesting words can be found in Figure ~\ref{fig:uni_int}.  If we remove the commonly used words, then for the majority of the questions had no questions. Those questions were asked by just uploading the photos.  We assume that the users thought that the app could automatically answer those questions. Other three most frequently used words are 'color', 'tell', and 'please'. Among these three the most interesting is `color'. Combination of `what' and `color' indicates that people with visual impairments faces issues with color detection, and often they ask the workers about the color of the objects and items.  Therefore, we found \textbf{color detection} problem of people with visual impairments from the analysis.  If we just consider the nouns and pronouns from the 30 most frequently used words, we find `box', `picture', `color', `screen', `shirt', `bottle', `flavor', `brand', `coffee', `label', and `product'. From this keywords, we can safely assume three other problems: they face issues with screens (screen), there are issues with objects (brand), and the users face issues with reading labels. Therefore, from the initial analysis we found four problems that people with visual impairments regularly face: \textbf{color detection}, \textbf{object detection}, \textbf{reading screens (mobile/ computer)}, and \textbf{reading labels}. 
+
+\begin{figure}[hbp]
+        \centering
+        
+        %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+        \includegraphics[width=\columnwidth]{images/int_count.png}  
+        \caption{Most frequently used interesting words} 
+          \label{fig:uni_int}   
+      
+        
+\end{figure}
+
+After checking the most frequently used words, we explored the most interesting pairs of words. If we check the bigrams (Figure ~\ref{fig:bi_all} and ~\ref{fig:bi_int} in Appendix), it gives confidence of our identified problems. The most frequently used two words are `what' and `this' which suggests that most questions were asked to identify the object. Therefore, people with visual impairments definitely face problems with detecting objects. `What' and `color' also suggests that users face color detection problem frequently. If we check the bigrams of most frequently used interesting words (Figure ~\ref{fig:bi_int}), we find some additional insights. If we ignore `NoQues', then we again see color detection and computer screen reading problem. However, now we can find another interesting pairs of words `look' and `like'. This pair indicates a subjective question, where the user is asking how the user is looking like. This identifies another challenges of people with visual impairments \textbf{Impression Management}. Another interesting common pair of words are 'long' and 'cook' which indicates reading label issues, however this can be a household activity issue. The trigrams also gave us some new interesting insights (Figure ~\ref{fig:tri_int}). Most of the trigrams confirms above mentioned challenges, however, there are some new issues. One interesting trigram is `display', `treadmill', and `tell' which indicates the health fitness related issues or \textbf{Health Management} Issue. Due to the accessibility issues in health monitoring and fitness monitoring issues, they can not manage health effective. Therefore, the users often seek help for reading the display. Another interesting three words are `pregnancy',`test',`show' which can also be put into health Management category. However, this seems a private information, but still people with visual impairments have to share this information due to their visual challenges.
+
+
+\subsection{Challenges}
+Based on the rigorous analysis, we identified some challenges of people with visual impairments. In this section, we discuss the challenges:
+
+\subsubsection{Object Detection:}
+
 
 \begin{acks}
 
@@ -87,6 +148,31 @@ The authors would like to thank Professor Gregor von Laszewski for helping us wi
 \bibliography{report} 
 \newpage
 \appendix
+\section{Appendix}
+
+The bigram and trigram images. 
+\begin{figure*}[bp]
+        \centering
+        %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+        \includegraphics[scale=0.45]{images/bigram_all.png}  
+        \caption{Most frequently used pair of words} 
+          \label{fig:bi_all}   
+\end{figure*}
+
+\begin{figure*}[bp]
+        \centering
+        %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+        \includegraphics[scale=0.45]{project/images/bigram_interesting.png}  
+        \caption{Most frequently used pair of interesting words} 
+          \label{fig:bi_int}   
+\end{figure*}
+\begin{figure*}[bp]
+        \centering
+        %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+        \includegraphics[scale=0.5]{project/images/trigram_interesting.png}  
+        \caption{Most frequently used interesting words} 
+          \label{fig:tri_int}   
+\end{figure*}
 
 %We include an appendix with common issues that we see when students submit papers. One particular important issue is not to use the underscore in bibtex labels. Sharelatex allows this, but the proceedings script we have does not allow this.
 
