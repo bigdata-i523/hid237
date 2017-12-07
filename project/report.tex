@@ -133,8 +133,174 @@ After checking the most frequently used words, we explored the most interesting 
 \subsection{Challenges}
 Based on the rigorous analysis, we identified some challenges of people with visual impairments. In this section, we discuss the challenges:
 
-\subsubsection{Object Detection:}
+\subsubsection{Object Detection:} The most frequently asked question in VizWiz is `What is this' or `What is that'. `What' appeared more than 22,000 questions. Among those 22,000 questions around 7,000 questions are `What is this?' and `What is that?'. People asks variety of object detection questions ranging from everyday objects to personal objects. Some examples of  object detection problem is shown in Figure ~\ref{fig:object}.By manually analyzing some photos, it seems most of them are related to household activities. Therefore,with better tools it is possible to detect the objects. 
+\begin{figure}[hbp]
+        \centering
+        \begin{subfigure}[b]{0.4\columnwidth}
+                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+                \includegraphics[width=\textwidth]{images/object_1.pdf}  
+        \end{subfigure}%
+        ~ 
+        \begin{subfigure}[b]{0.4\columnwidth}
+                \includegraphics[width=\textwidth]{images/object_2.pdf}  
+        \end{subfigure}%
+        \caption{Object Detection Questions} 
+        %Android currently displays the requested permissions during the app installation process. iOS  allows selective disabling of permissions for installed apps.}
+        \label{fig:object}
+\end{figure}
 
+
+
+\subsubsection{Color Detection:} Another most frequent problem that people with visual impairments face is to detect colors. Most of the time they use VizWiz to identify colors of their cloths, items, foods,and others. Some examples of color detection is shown in Figure~\ref{fig:color}.  Based on the images, automatically detecting the colors seems a challenging task. Because, if we examine figure ~\ref{fig:color} we can see in the image there can be other objects. Automatically detecting the object of interest will be difficult. For example, in the right most photo the user is asking about the color of the dress in hand, however, there are other objects  visible in the photo. Therefore, identifying the color automatically will be challenging. 
+\begin{figure}[hbp]
+        \centering
+        \begin{subfigure}[b]{0.3\columnwidth}
+                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+                \includegraphics[width=\textwidth]{images/color_1.pdf}  
+        \end{subfigure}%
+        ~ 
+        \begin{subfigure}[b]{0.3\columnwidth}
+                \includegraphics[width=\textwidth]{images/color_2.pdf}  
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.3\columnwidth}
+                \includegraphics[width=\textwidth]{images/color_3.pdf}  
+        \end{subfigure}%
+        \caption{Color Detection images} 
+        %Android currently displays the requested permissions during the app installation process. iOS  allows selective disabling of permissions for installed apps.}
+        \label{fig:color}
+\end{figure}
+
+\subsubsection{Reading Screens:} Nowadays, people with visual impairments use smartphones and computers. They use screen reading software which generates synthesized speech to relay the information from screen. However, some times these software fail and visually impaired need to seek help from crowd workers. Another issue is the accessibility issues of CAPTCHA, people with visual impairments struggles with CAPTCHA. Therefore, they seek people who can read the CAPTCHA for them. Some examples of reading screen problems are shown in Figure~\ref{fig:screen}. 
+\begin{figure}[hbp]
+        \centering
+        \begin{subfigure}[b]{0.45\columnwidth}
+                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+                \includegraphics[width=\textwidth]{images/screen_1.pdf}  
+        \end{subfigure}%
+        ~ 
+        \begin{subfigure}[b]{0.45\columnwidth}
+                \includegraphics[width=\textwidth]{images/screen_2.pdf}  
+        \end{subfigure}%
+       
+        \caption{Screen Reading images} 
+        %Android currently displays the requested permissions during the app installation process. iOS  allows selective disabling of permissions for installed apps.}
+        \label{fig:screen}
+\end{figure}
+
+\subsubsection{Reading documents or labels:} Another obvious challenges of people with visual impairments is reading documents. The paper documents are not often accessible and people need help from others to read that. People might use scanners to read documents, however, scanning documents can be time consuming. Especially, for scanning food or medicine labels can be difficult. Therefore, participants seek help to read labels for them.Figure~\ref{fig:reading} shows some examples of reading issues. However, there can be potential score for technology for this types of problem. If the user is asking for reading helps, a simple OCR can help. However, OCR might not work well with food labels. One suggestion could be for food related reading question, the system could look for barcode and identify necessary information.
+\begin{figure}[hbp]
+        \centering
+        \begin{subfigure}[b]{0.3\columnwidth}
+                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+                \includegraphics[width=\textwidth]{images/reading_1.pdf}  
+        \end{subfigure}%
+        ~ 
+        \begin{subfigure}[b]{0.3\columnwidth}
+                \includegraphics[width=\textwidth]{images/reading_2.pdf}  
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.3\columnwidth}
+                \includegraphics[width=\textwidth]{images/reading_3.pdf}  
+        \end{subfigure}%
+       
+        \caption{Reading problems related images} 
+        %Android currently displays the requested permissions during the app installation process. iOS  allows selective disabling of permissions for installed apps.}
+        \label{fig:reading}
+\end{figure}
+
+\subsubsection{Impression Management:} Based on the analysis, we explored that managing impressions can be challenging. As a social norm, we often present our better selves to others by wearing consistent dresses. For example, we do not want to present ourselves in social places in such way that may misrepresent ourselves. Some words that we found in the questions are `look', `like' which we assume that users are asking to understand their appearance. Therefore, impression management for people could be challenging. Sometimes, the questions can be appearance related. Some examples of impression management challenges is shown in Figure ~\ref{fig:impression}.
+\begin{figure}[hbp]
+        \centering
+        \begin{subfigure}[b]{0.45\columnwidth}
+                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+                \includegraphics[width=\textwidth]{images/impression_1.pdf}  
+        \end{subfigure}%
+        ~ 
+        \begin{subfigure}[b]{0.45\columnwidth}
+                \includegraphics[width=\textwidth]{images/impression_2.pdf}  
+        \end{subfigure}%
+       
+        \caption{Questions asked containing `look' and `like'} 
+        %Android currently displays the requested permissions during the app installation process. iOS  allows selective disabling of permissions for installed apps.}
+        \label{fig:impression}
+\end{figure}
+
+\subsubsection{Health Management:} Health management is important for everyone. However, people with visual impairments face lot of challenges to maintain healthy behavior. They struggles to cook, therefore, they need to eat outside or eat packaged foods. They can not read the package's well, so miss the nutrition info. Managing medicine can be issue. Some other issues can be attributed to visual representation of results. For examples, weight scales show visual weights, pregnancy scales convey visual feedback, health monitoring instruments like treadmill convey visual information. All these visual information makes it difficult for managing health issues. Therefore, health management can be challenging. For that reasons, people with visual impairments often ask such applications to help them with various visual indicators in health and fitness. Figure ~\ref{fig:health} shows three different health realted issues of people with visual impairments. Figure~\ref{fig:pill} depicts the issues of medicine management, users often can not identify the required medicine. Figure ~\ref{fig:preg} shows asking the result of pregnancy test, which can be sensitive. Figure~\ref{fig:weight} asking questions about the weight of the user. Since, such applications can forward these questions to friends and family members all these images can be sensitive. However, technology can potentially address this issue by automating the responses.
+\begin{figure}[hbp]
+        \centering
+        \begin{subfigure}[b]{0.3\columnwidth}
+                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+                \includegraphics[width=\textwidth]{images/health_1.pdf}  
+                \caption{Question asking pill information}
+                \label{fig:pill}
+        \end{subfigure}%
+        ~ 
+        \begin{subfigure}[b]{0.3\columnwidth}
+                \includegraphics[width=\textwidth]{images/health_2.pdf}
+                \caption{Question asking the result of pregnancy test}
+                \label{fig:preg}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.3\columnwidth}
+                \includegraphics[width=\textwidth]{images/health_3.pdf} 
+                 \caption{Question asking the weight}
+                 \label{fig:weight}
+        \end{subfigure}%
+        \caption{Various health related questions} 
+        %Android currently displays the requested permissions during the app installation process. iOS  allows selective disabling of permissions for installed apps.}
+        \label{fig:health}
+\end{figure}
+
+\subsubsection{Taking Photos:} Like sighted people, visually impaired people also wants to take photos. However, taking photos are challenging since the users can not seen the image. Therefore, they often struggle to take photos. The irony of applications like VizWiz is that these services require a challenging task to solve other challenges. Although none of the questions mention anything about taking photos, the responses of the web workers illustrates the photo taking challenges of people with visual impairments. Around 4000 images have been detected as blurry and not understandable by human workers. Apart from blurry images, sometimes photos can be out of focus and misplaced. 
+
+\begin{figure}[hbp]
+        \centering
+        \begin{subfigure}[b]{0.3\columnwidth}
+                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+                \includegraphics[width=\textwidth]{images/blurry.jpg}  
+                \caption{Blurry Photo}
+                \label{fig:blur}
+        \end{subfigure}%
+        ~ 
+        \begin{subfigure}[b]{0.3\columnwidth}
+                \includegraphics[width=\textwidth]{images/poor_f.pdf}
+                \caption{Poorly Focused photo}
+                \label{fig:pf}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.3\columnwidth}
+                \includegraphics[width=\textwidth]{images/off_focus.pdf} 
+                 \caption{Off Focused photo}
+                 \label{fig:off}
+        \end{subfigure}%
+        \caption{Poorly captured images} 
+        %Android currently displays the requested permissions during the app installation process. iOS  allows selective disabling of permissions for installed apps.}
+        \label{fig:photo}
+\end{figure}
+Figure ~\ref{fig:photo} depicts the some not understandable photos taken by people with visual impairments. However, such images takes resources and often cost money. If the system can early detect such images and prevent those images from sending then it can save resources. Misplaced or blurry photos can be early detected. Another potential scope of technology is to automatically fix the blurry images. 
+
+
+We identified various challenges of people with visual impairments. There can be other challenges, however, from the VizWiz data set these seven seems some major problems. We also discovered that there can be privacy issues with the shared images (i.e., pregnancy test results) and such data need to be handled carefully. Although existing services require manual efforts, technology has various scopes to help people with visual impairments. Due to poor quality of images, such system may consume significant user resources and early detection of the quality of images can save the resources. In the next section, we discuss one such approach and the evaluation of the approach using VizWiz data set. 
+
+\subsection{Automatically Detecting Blurry Images}
+We have already give some examples of the struggles of taking photos by the user. Often their photos are out of focus and blurry. Using OpenCV, we can detect blurry images. From the web workers responses we have an estimation that some photos are very blurry and can not be recognizable by human. If the system can early detect the blurry photos and asks the user to retake the photos it could reduce human effort. In this analysis, our task is if we can automatically identify the blurred images. The `Image Analysis' jupyter notebook shows some the analysis that we performed in this section.
+
+\subsubsection{Estimation of Ground Truth Data}
+ We set up the ground truth from the web workers responses. If any of the web workers mentioned that the image is blurry, then we set the image as blurry. From that, we found a list of 3580 images which can be considered as blurry. We then divided the data frame into two different sets: blurred set and not blurred set. 
+
+\subsubsection{Detecting Blurry Photos} We followed pyimagesearch's tutorial to detect the blur images~\cite{blur}. Following that tutorial, we used variance of the Laplacian to detect the blurred images. Then, we run  the algorithm on 33,580 images. 
+
+\subsubsection{Calculating $F1$ score} We made an assumption for the accuracy of blur detection. If we consider the real case scenario, if the user need to take a photo more than once to avoid blurring that is not a problem. Although, they have difficulties of taking photos but it is still possible to take a better photo and there is no cost of taking photos. However, if we send a blurry photo to web worker it wastes resources. The system need to pay the web workers for their tasks and the system somehow charges that money to the users. Therefore, taking a blurry photo is costly. Therefore, for such a system it is better to be some false positives than false negatives. Therefore, this system tries to reduce the false negatives. Hence, we tried to improve the recall. However, too much false positive can affect the usability of a system. Therefore,Our target is to find the best accuracy over blurred images minimizing false positive rates. F1 score will help us to find a correct threshold. Our initial threshold of 150 gave us F1 score of 21.36\%.
+
+\subsubsection{Identifying a good threshold} We run the algorithm with various thresholds. The F1 score graph against various thresholds did not improve the accuracy. Figure ~\ref{fig:accuracy} shows the accuracy of blur detection.
+\begin{figure}[hbp]
+        \centering
+        
+        %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+        \includegraphics[width=\columnwidth]{images/f1.png}  
+        \caption{Accuracy of Laplacian blur detection } 
+          \label{fig:accuracy}   
+      
+        
+\end{figure}
+\subsubsection{Implications of result} The poor accuracy of the blur detection algorithms depicts some problems of real world data set. Although Laplacian blur detection is a good indicator is a good indicator of blurred images, the algorithm failed in this case. The failure of the blur detection algorithm can be attributed to poorly taken images and inconsistent image sizes. We tried to change the size of the images, however, it did not improve the accuracy of the results. Probably using new deep learning based methods will be more effective. 
 
 \begin{acks}
 
