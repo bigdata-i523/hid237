@@ -302,6 +302,24 @@ We have already give some examples of the struggles of taking photos by the user
 \end{figure}
 \subsubsection{Implications of result} The poor accuracy of the blur detection algorithms depicts some problems of real world data set. Although Laplacian blur detection is a good indicator is a good indicator of blurred images, the algorithm failed in this case. The failure of the blur detection algorithm can be attributed to poorly taken images and inconsistent image sizes. We tried to change the size of the images, however, it did not improve the accuracy of the results. Probably using new deep learning based methods will be more effective. 
 
+
+\subsection{Privacy implications of VizWiz}
+In the analysis of VizWiz, we have seen various issues of people with visual impairment. Definitely, such applications are helping the users, making them more independent. However, there are privacy risks. We have seen people share their medical health information, often they share their address web workers. The authors of VizWiz data set did not share 5000 photos due to privacy reason. However, people often share their credit card information which can have severe consequences. The information given to unfamiliar people can be exploited. Therefore, additional care is required for such data. Based on the analysis, we have seen multiple times that it is not always possible to automatically answering the questions. We need human intelligence for some challenges. If the data requires human intelligence, then instead of sending the complete data the system can send partial data so that the privacy implication can be reduced.
+
+Another potential privacy threat can be arose from the inability to know what is in the picture. The user can mistakenly capture sensitive photos and share it with the web workers. The bystanders of such devices are also in risk, because they can also inadvertently captured by the user and shared with the crowd workers.One such example is shown in Figure~\ref{fig:privacy}. If we check the figure, we can see that a bystander is present in the picture. The question asked for this question was `What is this?'. We can assume that the user probably was trying to detect an object but took a photo of nearby person. Similar privacy leakage can happen with credit cards, and other sensitive information. Photos can be shared in error. Therefore, such systems should consider such implications and should take extra precaution to reduce such incidents. 
+\begin{figure}[tbp]
+        \centering
+        
+        %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+        \includegraphics[width=\columnwidth]{images/private_1.pdf}  
+        \caption{Privacy Implications of VizWiz} 
+          \label{fig:privacy}   
+      
+        
+\end{figure}
+
+\section{Conclusion}
+People with visual impairments faces different challenges and by analyzing the VizWiz data set we identified and explored some challenges. Although some challenges could be identified by analyzing portions of the data, big data analytics helps us to get a better exploration of the challenges. Moreover, big data analytics also helps to discover some solution space. In future, if other such services similar analysis it would be possible to reduce the human effort that is required to operate such services. Moreover, with more data it would be possible to early detect the risks. By early detecting the risks, the system would be more helpful for people with visual impairments. Only in that way, they can enjoy the similar quality like other sighted people. 
 \begin{acks}
 
 The authors would like to thank Professor Gregor von Laszewski for helping us with the instruction and resources that were required to complete this paper. We would also to like to thank the associate instructors for being available on the course website all the time and helping us with their answers.
