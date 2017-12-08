@@ -54,6 +54,7 @@ paper2:
     chapter: Media
 project:
     type: project
+    review: Dec7, 2017
     author:
         - Tousif Ahmed
     hid:
@@ -70,5 +71,5 @@ project:
     application: HealthCare
     keywords: HID-237, ENGR 534
     url: https://github.com/bigdata-i523/hid237/project/report.tex
-    status: 80%, Dec 6, 2017
+    status: 100%, Dec 7, 2017
     chapter: Health
