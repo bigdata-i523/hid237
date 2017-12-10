@@ -1,6 +1,6 @@
 \documentclass[sigconf]{acmart}
 
-\input{format/final}
+\input{format/i523}
 \graphicspath{ {./images/}}
 \usepackage{subcaption}
 % \usepackage[table]{xcolor}
@@ -39,18 +39,17 @@ People with visual impairments face a variety of problems in their daily lives a
 
 One possible to understand the challenges of people with visual impairments is qualitative analysis or ethnographic studies with people with visual impairments. Simply, researchers can follow or conduct interviews with people with visual impairments. Although qualitative studies are widely accepted research methods, it has limitations. Specially to understand the problems of people with visual impairments, qualitative studies have severe limitations. As the challenges vary with the experiences of people with visual impairments, these studies can not capture or depict the whole picture. Besides, these studies are very expensive and need ample human effort. Therefore, we need a better way to understand the challenges of people with visual impairments.
 
-Big data analytics could be a potential alternative. To understand how big data can help people with visual impairments, we need to understand the backgroungd first. Nowadays, people with visual impairments uses different technologies for their problems.A wide range of technologies such as talking watch\footnote{https://www.maxiaids.com/talking-watches}, braille reader\footnote{\url{http://www.afb.org/prodBrowseCatResults.aspx?CatID=43}}, navigation helper \footnote{\url{http://www.gdp-research.com.au/}} are available in the market to help the visually impaired in their daily tasks. Since the introduction of smartphone, smartphone based applications gained huge popularities among people with visual impairments. Now, mobile and smartphone applications like Seeing AI~\cite{seeingai}, AiPoly~\cite{aipoly},LookTel~\cite{looktel}, and other such camera based applications are helping people with visual impairmentsin object recognition, face recognition, color detection, human emotion detection, activity recognition, and other such tasks that was not possible before. Figure ~\ref{fig:seeingai} depicts an example from Seeing AI which shows that how camera based applications are helping people with visual impairments by describing nearby person's activitty (Figure ~\ref{fig:ios}) and their facial emotions (Figure ~\ref{fig:facial}) .
+Big data analytics could be a potential alternative. To understand how big data can help people with visual impairments, we need to understand the backgroungd first. Nowadays, people with visual impairments uses different technologies for their problems.A wide range of technologies such as talking watch, braille reader, navigation helper are available in the market to help the visually impaired in their daily tasks. Since the introduction of smartphone, smartphone based applications gained huge popularities among people with visual impairments. Now, mobile and smartphone applications like Seeing AI~\cite{seeingai}, AiPoly~\cite{aipoly},LookTel~\cite{looktel}, and other such camera based applications are helping people with visual impairmentsin object recognition, face recognition, color detection, human emotion detection, activity recognition, and other such tasks that was not possible before. Figure ~\ref{fig:seeingai} depicts an example from Seeing AI which shows that how camera based applications are helping people with visual impairments by describing nearby person's activitty (Figure ~\ref{fig:ios}) and their facial emotions (Figure ~\ref{fig:facial}) .
 \begin{figure}[tbp]
         \centering
         \begin{subfigure}[b]{0.4\columnwidth}
-                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
-                \includegraphics[width=\textwidth]{images/facial.pdf}  
+                \includegraphics[scale=0.3]{images/facial.pdf}  
                 \caption{Age, gender, appearance, and facial expression} 
                   \label{fig:facial}   
         \end{subfigure}%
         ~ 
         \begin{subfigure}[b]{0.4\columnwidth}
-                \includegraphics[width=\textwidth]{images/activity2.pdf}  
+                \includegraphics[scale=0.3]{images/activity2.pdf}  
                  \caption{Age, gender, and activity of a nearby person}
                   \label{fig:ios}      
         \end{subfigure}%
@@ -98,8 +97,6 @@ We performed analysis on both the questions and image data sets. The image data 
 \subsubsection{Question Analysis}
 To understand the challenges of people with visual impairments we performed unigram, bigram, and trigram analysis. Based on the analysis, we identified several issues which is presented in the results. The process of identifying the challenges is discussed in next section.
 
-
-
 \section{Results}
 In this section,we present our results that we identified from the analysis:
 \subsection{Identifying the challenges of people with visual impairments}
@@ -107,7 +104,6 @@ The questions asked by people with visual impairments explains some of their cha
 \begin{figure}[hbp]
         \centering
         
-        %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
         \includegraphics[width=\columnwidth]{images/uni_all.png}  
         \caption{Most frequently used words in the questions asked} 
           \label{fig:uni_all}   
@@ -119,7 +115,6 @@ To understand the challenges, we first calculated the frequency of the words. Th
 \begin{figure}[hbp]
         \centering
         
-        %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
         \includegraphics[width=\columnwidth]{images/int_count.png}  
         \caption{Most frequently used interesting words} 
           \label{fig:uni_int}   
@@ -136,13 +131,12 @@ Based on the rigorous analysis, we identified some challenges of people with vis
 \subsubsection{Object Detection:} The most frequently asked question in VizWiz is `What is this' or `What is that'. `What' appeared more than 22,000 questions. Among those 22,000 questions around 7,000 questions are `What is this?' and `What is that?'. People asks variety of object detection questions ranging from everyday objects to personal objects. Some examples of  object detection problem is shown in Figure ~\ref{fig:object}.By manually analyzing some photos, it seems most of them are related to household activities. Therefore,with better tools it is possible to detect the objects. 
 \begin{figure}[hbp]
         \centering
-        \begin{subfigure}[b]{0.4\columnwidth}
-                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
-                \includegraphics[width=\textwidth]{images/object_1.pdf}  
+        \begin{subfigure}[b]{0.4\columnwidth} 
+                \includegraphics[scale=0.3]{images/object_1.pdf}  
         \end{subfigure}%
         ~ 
         \begin{subfigure}[b]{0.4\columnwidth}
-                \includegraphics[width=\textwidth]{images/object_2.pdf}  
+                \includegraphics[scale=0.3]{images/object_2.pdf}  
         \end{subfigure}%
         \caption{Object Detection Questions} 
         %Android currently displays the requested permissions during the app installation process. iOS  allows selective disabling of permissions for installed apps.}
@@ -155,15 +149,14 @@ Based on the rigorous analysis, we identified some challenges of people with vis
 \begin{figure}[hbp]
         \centering
         \begin{subfigure}[b]{0.3\columnwidth}
-                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
-                \includegraphics[width=\textwidth]{images/color_1.pdf}  
+                \includegraphics[scale=0.3]{images/color_1.pdf}  
         \end{subfigure}%
         ~ 
         \begin{subfigure}[b]{0.3\columnwidth}
-                \includegraphics[width=\textwidth]{images/color_2.pdf}  
+                \includegraphics[scale=0.3]{images/color_2.pdf}  
         \end{subfigure}%
         \begin{subfigure}[b]{0.3\columnwidth}
-                \includegraphics[width=\textwidth]{images/color_3.pdf}  
+                \includegraphics[scale=0.3]{images/color_3.pdf}  
         \end{subfigure}%
         \caption{Color Detection images} 
         %Android currently displays the requested permissions during the app installation process. iOS  allows selective disabling of permissions for installed apps.}
@@ -174,12 +167,11 @@ Based on the rigorous analysis, we identified some challenges of people with vis
 \begin{figure}[hbp]
         \centering
         \begin{subfigure}[b]{0.45\columnwidth}
-                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
-                \includegraphics[width=\textwidth]{images/screen_1.pdf}  
+                \includegraphics[scale=0.3]{images/screen_1.pdf}  
         \end{subfigure}%
         ~ 
         \begin{subfigure}[b]{0.45\columnwidth}
-                \includegraphics[width=\textwidth]{images/screen_2.pdf}  
+                \includegraphics[scale=0.3]{images/screen_2.pdf}  
         \end{subfigure}%
        
         \caption{Screen Reading images} 
@@ -191,15 +183,14 @@ Based on the rigorous analysis, we identified some challenges of people with vis
 \begin{figure}[hbp]
         \centering
         \begin{subfigure}[b]{0.3\columnwidth}
-                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
-                \includegraphics[width=\textwidth]{images/reading_1.pdf}  
+                \includegraphics[scale=0.3]{images/reading_1.pdf}  
         \end{subfigure}%
         ~ 
         \begin{subfigure}[b]{0.3\columnwidth}
-                \includegraphics[width=\textwidth]{images/reading_2.pdf}  
+                \includegraphics[scale=0.3]{images/reading_2.pdf}  
         \end{subfigure}%
         \begin{subfigure}[b]{0.3\columnwidth}
-                \includegraphics[width=\textwidth]{images/reading_3.pdf}  
+                \includegraphics[scale=0.3]{images/reading_3.pdf}  
         \end{subfigure}%
        
         \caption{Reading problems related images} 
@@ -211,12 +202,11 @@ Based on the rigorous analysis, we identified some challenges of people with vis
 \begin{figure}[hbp]
         \centering
         \begin{subfigure}[b]{0.45\columnwidth}
-                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
-                \includegraphics[width=\textwidth]{images/impression_1.pdf}  
+                \includegraphics[scale=0.3]{images/impression_1.pdf}  
         \end{subfigure}%
         ~ 
         \begin{subfigure}[b]{0.45\columnwidth}
-                \includegraphics[width=\textwidth]{images/impression_2.pdf}  
+                \includegraphics[scale=0.3]{images/impression_2.pdf}  
         \end{subfigure}%
        
         \caption{Questions asked containing `look' and `like'} 
@@ -228,19 +218,18 @@ Based on the rigorous analysis, we identified some challenges of people with vis
 \begin{figure}[hbp]
         \centering
         \begin{subfigure}[b]{0.3\columnwidth}
-                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
-                \includegraphics[width=\textwidth]{images/health_1.pdf}  
+                \includegraphics[scale=0.2]{images/health_1.pdf}  
                 \caption{Question asking pill information}
                 \label{fig:pill}
         \end{subfigure}%
         ~ 
         \begin{subfigure}[b]{0.3\columnwidth}
-                \includegraphics[width=\textwidth]{images/health_2.pdf}
+                \includegraphics[scale=0.2]{images/health_2.pdf}
                 \caption{Question asking the result of pregnancy test}
                 \label{fig:preg}
         \end{subfigure}%
         \begin{subfigure}[b]{0.3\columnwidth}
-                \includegraphics[width=\textwidth]{images/health_3.pdf} 
+                \includegraphics[scale=0.2]{images/health_3.pdf} 
                  \caption{Question asking the weight}
                  \label{fig:weight}
         \end{subfigure}%
@@ -254,19 +243,18 @@ Based on the rigorous analysis, we identified some challenges of people with vis
 \begin{figure}[hbp]
         \centering
         \begin{subfigure}[b]{0.3\columnwidth}
-                %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
-                \includegraphics[width=\textwidth]{images/blurry.jpg}  
+                \includegraphics[scale=0.15]{images/blurry.jpg}  
                 \caption{Blurry Photo}
                 \label{fig:blur}
         \end{subfigure}%
         ~ 
         \begin{subfigure}[b]{0.3\columnwidth}
-                \includegraphics[width=\textwidth]{images/poor_f.pdf}
+                \includegraphics[scale=0.25]{images/poor_f.pdf}
                 \caption{Poorly Focused photo}
                 \label{fig:pf}
         \end{subfigure}%
         \begin{subfigure}[b]{0.3\columnwidth}
-                \includegraphics[width=\textwidth]{images/off_focus.pdf} 
+                \includegraphics[scale=0.25]{images/off_focus.pdf} 
                  \caption{Off Focused photo}
                  \label{fig:off}
         \end{subfigure}%
@@ -292,8 +280,7 @@ We have already give some examples of the struggles of taking photos by the user
 \subsubsection{Identifying a good threshold} We run the algorithm with various thresholds. The F1 score graph against various thresholds did not improve the accuracy. Figure ~\ref{fig:accuracy} shows the accuracy of blur detection.
 \begin{figure}[hbp]
         \centering
-        
-        %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
+          
         \includegraphics[width=\columnwidth]{images/f1.png}  
         \caption{Accuracy of Laplacian blur detection } 
           \label{fig:accuracy}   
@@ -310,7 +297,6 @@ Another potential privacy threat can be arose from the inability to know what is
 \begin{figure}[tbp]
         \centering
         
-        %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
         \includegraphics[width=\columnwidth]{images/private_1.pdf}  
         \caption{Privacy Implications of VizWiz} 
           \label{fig:privacy}   
@@ -333,24 +319,29 @@ The authors would like to thank Professor Gregor von Laszewski for helping us wi
 \newpage
 \appendix
 \section{Appendix}
-\noindent\begin{minipage}{\textwidth}
+%\noindent\begin{minipage}{\columnwidth}
+\begin{figure*}[bp]  
     \centering
-    \captionof{figure}{Most frequently used pair of word}
+    
     \includegraphics[scale=0.45]{images/bigram_all.png}
+    \caption{figure}{Most frequently used pair of word}
      \label{fig:bi_all}   
-\end{minipage}
-\noindent\begin{minipage}{\textwidth}
+\end{figure*}
+
+%\noindent\begin{minipage}{\columnwidth}
+\begin{figure*}[bp]   
     \centering
-    \captionof{figure}{Most frequently used pair of interesting words}
+    
     \includegraphics[scale=0.45]{images/bigram_interesting.png}
+    \caption{figure}{Most frequently used pair of interesting words}
      \label{fig:bi_int}   
-\end{minipage}
+%\end{minipage}
+\end{figure*}
 %The bigram and trigram images. 
 
 
 \begin{figure*}[bp]
         \centering
-        %\includegraphics[width=\textwidth]{figures/appPermissions.pdf}  
         \includegraphics[scale=0.5]{images/trigram_interesting.png}  
         \caption{Most frequently used interesting words} 
           \label{fig:tri_int}   
