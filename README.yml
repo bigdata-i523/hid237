@@ -23,7 +23,6 @@ paper1:
         - 237
     status: 100%, October 27, 2017
     title: Big Data Analytics in Cyber Security and Threat Research
-    type: latex
     url: https://github.com/bigdata-i523/hid237/paper1/report.pdf
 paper2:
     review: Nov 6 2017
@@ -49,7 +48,6 @@ paper2:
         - 237
     status: 100%, Nov 6, 2017
     title: Big Data Analytics in Social Media Threat Research
-    type: latex
     url: https://github.com/bigdata-i523/hid237/paper2/report.tex
     chapter: Media
 project:
